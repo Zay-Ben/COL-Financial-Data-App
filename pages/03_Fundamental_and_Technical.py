@@ -60,7 +60,7 @@ if "col" in st.session_state:
                      y = "P/52H",
                      color = color,
                      size = "MC (Billion)",
-                     hover_data = hover_data,
+                     # hover_data = hover_data,
                      text = text,
                      facet_row = facet_row,
                      facet_col = facet_col,
