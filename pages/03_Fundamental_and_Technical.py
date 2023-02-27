@@ -28,21 +28,25 @@ if "col" in st.session_state:
     
     col1, col2 = st.columns(2)
     
+    # Advance
+    
     with col1:
         advance = st.checkbox(label = "Advance")
         if advance:
-            hover_data = ["Ticker"] + ["Sector", "Subsector", "MC (Billion)", "P", "FV", "FV (%)", "P/FV", "52H", "52H (%)", "P/52H"]
+            custom_data = ["Ticker"] + ["Sector", "Subsector", "MC (Billion)", "P", "FV", "FV (%)", "P/FV", "52H", "52H (%)", "P/52H", "Trend", "Technical Rating", "Fundamental Rating"]
             color = "Trend"
             facet_row = "Technical Rating"
             facet_col = "Fundamental Rating"
             height = 1500
         else:
-            hover_data = ["Ticker"] + ["Sector", "Subsector", "MC (Billion)", "P", "FV", "FV (%)", "P/FV", "52H", "52H (%)", "P/52H", "Trend", "Technical Rating", "Fundamental Rating"]
+            custom_data = ["Ticker"] + ["Sector", "Subsector", "MC (Billion)", "P", "FV", "FV (%)", "P/FV", "52H", "52H (%)", "P/52H"]
             color = color
             facet_row = None
             facet_col = None
             height = 500
             
+    # Ticker
+    
     with col2:
         ticker = st.checkbox(label = "Ticker")
         if ticker:
@@ -52,20 +56,20 @@ if "col" in st.session_state:
             
     # Plot Data
     
-    customdata, hovertemplate = customdata_hovertemplate.ch(df = df, hover_data = hover_data)
+    hovertemplate = "<br>".join(["<b>%{customdata[0]}</b>"] + ["<b>" + str(hover_data[i]) + ":</b> %{customdata[" + str(i) + "]}" for i in range(1, len(hover_data))])
     
     fig = px.scatter(data_frame = df,
                      x = "P/FV",
                      y = "P/52H",
                      color = color,
                      size = "MC (Billion)",
-                     custom_data = hover_data,
+                     custom_data = custom_data,
                      text = text,
                      facet_row = facet_row,
                      facet_col = facet_col,
                      width = 1000,
                      height = height)
     
-    fig.update_traces(hovertemplate = hovertemplate) # customdata = customdata, 
+    fig.update_traces(hovertemplate = hovertemplate)
     
     st.plotly_chart(figure_or_data = fig, use_container_width = True)
