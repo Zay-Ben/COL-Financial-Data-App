@@ -10,6 +10,8 @@ This app addresses these challenges by:
 3. Creating new variables from old variables, providing additional insights.
 4. Visualizing data to identify potential investments and trades, facilitating informed and timely decision-making
 
+Please note that the app is not affiliated with COL Financial and has some limitations, such as the lack of historical and fundamental data for some stocks, as well as some data being estimated by analysts. Nonetheless, the app still provides valuable insights for investors and traders in the Philippine stock market.
+
 ## Usage
 
 To use the app, follow these simple steps:
@@ -23,5 +25,3 @@ Once the file has been uploaded, the app will then output a xlsx file containing
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-Please note that the app is not affiliated with COL Financial and has some limitations, such as the lack of historical and fundamental data for some stocks, as well as some data being estimated by analysts. Nonetheless, the app still provides valuable insights for investors and traders in the Philippine stock market.
