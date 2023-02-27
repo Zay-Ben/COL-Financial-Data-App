@@ -3,7 +3,6 @@ from datetime import date
 import pandas as pd
 import plotly.express as px
 import numpy as np
-import customdata_hovertemplate
 
 st.title(body = "Fundamental and Technical")
 st.caption(body = date.today())
@@ -56,7 +55,7 @@ if "col" in st.session_state:
             
     # Plot Data
     
-    hovertemplate = "<br>".join(["<b>%{customdata[0]}</b>"] + ["<b>" + str(hover_data[i]) + ":</b> %{customdata[" + str(i) + "]}" for i in range(1, len(hover_data))])
+    hovertemplate = "<br>".join(["<b>%{customdata[0]}</b>"] + ["<b>" + str(custom_data[i]) + ":</b> %{customdata[" + str(i) + "]}" for i in range(1, len(custom_data))])
     
     fig = px.scatter(data_frame = df,
                      x = "P/FV",
