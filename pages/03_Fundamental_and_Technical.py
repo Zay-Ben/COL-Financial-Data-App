@@ -20,6 +20,7 @@ if "col" in st.session_state:
     col = st.session_state["col"]
     col_notna = col[col["Fundamental Rating"].notna()]
     df = col_notna
+    df.sort_index(inplace = True)
     
     # Color
     
