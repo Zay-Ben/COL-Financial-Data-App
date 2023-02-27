@@ -25,7 +25,7 @@ if "col" in st.session_state:
     
     # Options
     
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     
     # Advance
     
@@ -44,9 +44,14 @@ if "col" in st.session_state:
             facet_col = None
             height = 500
             
-    # Ticker
+    # Sweet Spot
     
     with col2:
+        sweet_spot = st.checkbox(label = "Sweet Spot")
+        
+    # Ticker
+    
+    with col3:
         ticker = st.checkbox(label = "Ticker")
         if ticker:
             text = "Ticker"
@@ -70,5 +75,15 @@ if "col" in st.session_state:
                      height = height)
     
     fig.update_traces(hovertemplate = hovertemplate)
+    
+    if sweet_spot:
+        fig.add_shape(fillcolor = "green",
+                      opacity = 0.1,
+                      x0 = min(df["P/FV"]),
+                      x1 = 1,
+                      y0 = 0.9,
+                      y1 = max(df["P/52H"]))
+    else:
+        pass
     
     st.plotly_chart(figure_or_data = fig, use_container_width = True)
