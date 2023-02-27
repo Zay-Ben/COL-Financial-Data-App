@@ -4,24 +4,18 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 import customdata_hovertemplate
-
 st.title(body = "Fundamental and Technical")
-
 st.caption(body = date.today())
-
 st.markdown(body = "* Bubble Size - MC (Million)")
 st.markdown(body = "* Horizontal Axis - P/FV")
 st.markdown(body = "* Vertical Axis - P/52H")
-
 if "col" in st.session_state:
     
     # Import Data
     
     col = st.session_state["col"]
-    
     col_notna = col[col["Fundamental Rating"].notna()]
-    
-    df = col_notna.reset_index() #
+    df = col_notna
     
     # Color
     
@@ -57,16 +51,12 @@ if "col" in st.session_state:
     
     customdata, hovertemplate = customdata_hovertemplate.ch(df = df, hover_data = hover_data)
     
-    df = df.set_index("Ticker")
-    
-    st.dataframe(df)
-    
     fig = px.scatter(data_frame = df,
                      x = "P/FV",
                      y = "P/52H",
                      color = color,
                      size = "MC (Billion)",
-                     # hover_data = hover_data,
+                     hover_data = hover_data,
                      text = text,
                      facet_row = facet_row,
                      facet_col = facet_col,
