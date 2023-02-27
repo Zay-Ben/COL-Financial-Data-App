@@ -57,7 +57,7 @@ if "col" in st.session_state:
     
     customdata, hovertemplate = customdata_hovertemplate.ch(df = df, hover_data = hover_data)
     
-    st.datatable(df)
+    st.dataframe(df)
     
     df = df.set_index("index")
     
