@@ -18,6 +18,9 @@ if "col" in st.session_state:
     col = st.session_state["col"]
     col_notna = col[col["Fundamental Rating"].notna()]
     df = col_notna
+    df = df.reset_index()
+    
+    st.datatable(df)
     
     # Color
     
