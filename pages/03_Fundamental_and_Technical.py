@@ -59,7 +59,7 @@ if "col" in st.session_state:
     
     st.dataframe(df)
     
-    df = df.set_index("index")
+    df = df.set_index("Ticker")
     
     fig = px.scatter(data_frame = df,
                      x = "P/FV",
