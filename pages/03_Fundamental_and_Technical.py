@@ -4,11 +4,13 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 import customdata_hovertemplate
+
 st.title(body = "Fundamental and Technical")
 st.caption(body = date.today())
 st.markdown(body = "* Bubble Size - MC (Million)")
 st.markdown(body = "* Horizontal Axis - P/FV")
 st.markdown(body = "* Vertical Axis - P/52H")
+
 if "col" in st.session_state:
     
     # Import Data
