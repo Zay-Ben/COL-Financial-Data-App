@@ -18,8 +18,10 @@ if "col" in st.session_state:
     # Import Data
     
     col = st.session_state["col"]
+    
     col_notna = col[col["Fundamental Rating"].notna()]
-    df = col_notna
+    
+    df = col_notna.reset_index() #
     
     # Color
     
@@ -54,6 +56,8 @@ if "col" in st.session_state:
     # Plot Data
     
     customdata, hovertemplate = customdata_hovertemplate.ch(df = df, hover_data = hover_data)
+    
+    df = df.set_index("index")
     
     fig = px.scatter(data_frame = df,
                      x = "P/FV",
