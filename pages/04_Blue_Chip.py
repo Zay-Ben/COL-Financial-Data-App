@@ -3,12 +3,9 @@ from datetime import date
 import pandas as pd
 import plotly.express as px
 import numpy as np
-import customdata_hovertemplate
 
 st.title(body = "Blue Chip")
-
 st.caption(body = date.today())
-
 st.markdown(body = "* Horizontal Axis - MC (Million)")
 st.markdown(body = "* Vertical Axis - Ticker")
 st.markdown(body = "* Text - FV (%)")
@@ -20,6 +17,7 @@ if "col" in st.session_state:
     col = st.session_state["col"]
     col_notna = col[col["Fundamental Rating"].notna()]
     df = col_notna
+    df = df.reset_index()
     
     bar = df.sort_values(by = "MC (Billion)", ascending = True)
     
@@ -29,17 +27,17 @@ if "col" in st.session_state:
     
     # Hover Data
     
-    hover_data = [df.index] + ["Sector", "Subsector", "MC (Billion)", "P", "FV", "FV (%)"]
+    hover_data = ["Ticker"] + ["Sector", "Subsector", "MC (Billion)", "P", "FV", "FV (%)"]
     
     # Plot Data
     
-    customdata, hovertemplate = customdata_hovertemplate.ch(df = df, hover_data = hover_data)
+    hovertemplate = "<br>".join(["<b>%{customdata[0]}</b>"] + ["<b>" + str(custom_data[i]) + ":</b> %{customdata[" + str(i) + "]}" for i in range(1, len(custom_data))])
     
     fig = px.bar(data_frame = bar,
                  x = "MC (Billion)",
-                 y = bar.index,
+                 y = "Ticker",
                  color = color,
-                 hover_data = hover_data,
+                 custom_data = custom_data,
                  text = "FV (%)",
                  width = 1000,
                  height = 1000)
