@@ -36,7 +36,7 @@ if "col" in st.session_state:
             color = "Trend"
             facet_row = "Technical Rating"
             facet_col = "Fundamental Rating"
-            height = 1000
+            height = 1500
         else:
             hover_data = [df.index] + ["Sector", "Subsector", "MC (Billion)", "P", "FV", "FV (%)", "P/FV", "52H", "52H (%)", "P/52H", "Trend", "Technical Rating", "Fundamental Rating"]
             color = color
