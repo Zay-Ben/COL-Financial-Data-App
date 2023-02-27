@@ -20,7 +20,7 @@ if "col" in st.session_state:
     df = col_notna
     df = df.reset_index()
     
-    st.datatable(df)
+    st.table(df)
     
     # Color
     
