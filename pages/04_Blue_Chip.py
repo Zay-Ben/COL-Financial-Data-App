@@ -25,9 +25,9 @@ if "col" in st.session_state:
     
     color = st.selectbox(label = "Color", options = [None, "Sector", "Subsector"])
     
-    # Hover Data
+    # Custom Data
     
-    hover_data = ["Ticker"] + ["Sector", "Subsector", "MC (Billion)", "P", "FV", "FV (%)"]
+    custom_data = ["Ticker"] + ["Sector", "Subsector", "MC (Billion)", "P", "FV", "FV (%)"]
     
     # Plot Data
     
