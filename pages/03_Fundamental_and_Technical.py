@@ -58,7 +58,7 @@ if "col" in st.session_state:
     fig = px.scatter(data_frame = df,
                      x = "P/FV",
                      y = "P/52H",
-                     color = color,
+                     color = df[color],
                      size = "MC (Billion)",
                      hover_data = hover_data,
                      text = text,
