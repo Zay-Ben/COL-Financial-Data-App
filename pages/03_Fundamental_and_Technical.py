@@ -57,9 +57,9 @@ if "col" in st.session_state:
     
     customdata, hovertemplate = customdata_hovertemplate.ch(df = df, hover_data = hover_data)
     
-    st.dataframe(df)
-    
     df = df.set_index("Ticker")
+    
+    st.dataframe(df)
     
     fig = px.scatter(data_frame = df,
                      x = "P/FV",
