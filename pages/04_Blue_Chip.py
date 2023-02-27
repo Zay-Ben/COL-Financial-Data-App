@@ -42,6 +42,6 @@ if "col" in st.session_state:
                  width = 1000,
                  height = 1000)
     
-    fig.update_traces(customdata = customdata, hovertemplate = hovertemplate, textposition = "outside")
+    fig.update_traces(hovertemplate = hovertemplate, textposition = "outside")
     
     st.plotly_chart(figure_or_data = fig, use_container_width = True)
