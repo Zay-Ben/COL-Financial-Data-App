@@ -1,5 +1,7 @@
 # COL Financial Data App
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://col-financial.streamlit.app)
+
 COL Financial, one of the largest stockbrokers in the Philippines, provides fundamental and technical data to investors and traders. However, the data are separated, with discrepancies in timing and limited variables, posing challenges for users to identify potential investments and trades.
 
 This app addresses these challenges by:
