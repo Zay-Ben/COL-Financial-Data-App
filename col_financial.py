@@ -2,7 +2,7 @@ import pandas as pd
 
 def cf(path_col):
 
-    path_pse = "PSE.xlsx"
+    path_pse = "inputs/PSE.xlsx"
 
     # All Shares Index (ASI)
 
