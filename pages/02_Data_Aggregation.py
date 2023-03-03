@@ -10,6 +10,10 @@ st.title(body = "Data Aggregation")
 
 path_col = st.file_uploader(label = "Upload the Microsoft Excel file (xlsx) that contains COL Financial's All Shares Index, Investment Guide, and Technical Guide here.", type = "xlsx")
 
+sample_data = pd.read_excel(io = "inputs/COL.xlsx")
+
+st.download_button(label = "col.xlsx", data = sample_data, file_name = "col.xlsx")
+
 if path_col:
     
     col_temporary = col_financial.cf(path_col = path_col)
@@ -24,10 +28,6 @@ if path_col:
     writer.save()
     
     st.markdown(body = "Sample Data")
-    
-    sample_data = pd.read_excel(io = "inputs/COL.xlsx")
-    
-    st.download_button(label = "col.xlsx", data = sample_data, file_name = "col.xlsx")
     
     st.markdown(body = "Download Data")
     
