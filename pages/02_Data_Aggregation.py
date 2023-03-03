@@ -10,7 +10,7 @@ st.title(body = "Data Aggregation")
 
 path_col = st.file_uploader(label = "Upload the Microsoft Excel file (xlsx) that contains COL Financial's All Shares Index, Investment Guide, and Technical Guide here.", type = "xlsx")
 
-if st.button("Sample Data"):
+if st.button("Use Sample Data"):
     path_col = "inputs/COL.xlsx"
 else:
     pass
