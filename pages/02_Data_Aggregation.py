@@ -23,9 +23,15 @@ if path_col:
         
     writer.save()
     
+    st.markdown(body = "Sample Data")
+    
+    sample_data = pd.read_excel(io = "inputs/COL.xlsx")
+    
+    st.download_button(label = "col.xlsx", data = sample_data, file_name = "col.xlsx")
+    
     st.markdown(body = "Download Data")
     
-    st.download_button(label = "col.xlsx", data = buffer, file_name = "col.xlsx")
+    st.download_button(label = "data.xlsx", data = buffer, file_name = "data.xlsx")
     
     st.markdown(body = "View Data")
     
