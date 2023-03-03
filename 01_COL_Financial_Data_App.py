@@ -6,7 +6,7 @@ from datetime import datetime
 import numpy as np
 import io
 
-st.title(body = "Data Aggregation")
+st.title(body = "COL Financial Data App")
 
 path_col = st.file_uploader(label = "Upload the Microsoft Excel file (xlsx) that contains COL Financial's All Shares Index, Investment Guide, and Technical Guide here.", type = "xlsx")
 
