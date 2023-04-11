@@ -12,13 +12,10 @@ st.markdown(body = "* Vertical Axis - P/52H")
 
 with st.expander("How to interpret the chart?"):
     st.markdown("""
-    This chart enables investors or traders to identify stocks with a strong trend, a cheap valuation, and a high liquidity.
-    * `P/FV` or Price over Fair Value is used to determine a stock's valuation.
-    ** If `P/FV` is less than 1, it indicates that the stock's valuation is cheap because the price is below its fair value.
-    * `P/52H` or Price over 52-Week High is used to determine a stock's trend.
-    ** If `P/52H` is high, it indicates that the stock's trend is strong because the price is near its 52-week high.
-    * `MC (Million)` or Market Capitalization in Million is used to determined a stock's liquidity.
-    ** If `MC (Million)` is high, it indicates that the stock's liquidity is high.
+    This chart helps investors and traders identify stocks with a cheap valuation, a strong trend, and a high liquidity. It uses three metrics:
+    * `P/FV` (Price over Fair Value) to determine a stock's valuation. A value less than 1 indicates that the stock's valuation is cheap.
+    * `P/52H` (Price over 52-Week High) to determine a stock's trend. A high value indicates that the stock's trend is strong.
+    * `MC (Million)` (Market Capitalization in Million) to determine a stock's liquidity. A high value indicates that the stock's liquidity is high."
     """)
 
 if "col" in st.session_state:
