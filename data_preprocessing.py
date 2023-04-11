@@ -58,7 +58,9 @@ def dp(col_temporary):
     # Create Columns
 
     # CL
-
+    
+    col_temporary["Listing Date"] = col_temporary["Listing Date"].to_datetime()
+    
     col_temporary["Age"] = col_temporary["Listing Date"].apply(lambda x: datetime.today().year - x.year)
 
     # IG
