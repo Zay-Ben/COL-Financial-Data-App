@@ -13,10 +13,10 @@ st.markdown(body = "* Vertical Axis - P/52H")
 with st.expander("How to interpret the chart?"):
     st.markdown("""
     This chart enables investors or traders to identify stocks with both a cheap valuation and a strong trend.
-    * P/FV is used to determine a stock's valuation.
-    * P/52H is used to determine a stock's trend.
-    * If P/FV is less than 1, it indicates that the stock's valuation is cheap because the price is below its fair value.
-    * If P/52H is high, it indicates that the stock's trend is strong because it the price is near its 52-week high.
+    * `P/FV` is used to determine a stock's valuation.
+    * `P/52H` is used to determine a stock's trend.
+    * If `P/FV` is less than 1, it indicates that the stock's valuation is cheap because the price is below its fair value.
+    * If `P/52H` is high, it indicates that the stock's trend is strong because it the price is near its 52-week high.
     """)
 
 if "col" in st.session_state:
