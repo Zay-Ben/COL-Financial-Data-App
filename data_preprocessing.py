@@ -59,7 +59,7 @@ def dp(col_temporary):
 
     # CL
     
-    col_temporary["Listing Date"] = col_temporary["Listing Date"].to_datetime()
+    col_temporary["Listing Date"] = pd.to_datetime(col_temporary["Listing Date"])
     
     col_temporary["Age"] = col_temporary["Listing Date"].apply(lambda x: datetime.today().year - x.year)
 
