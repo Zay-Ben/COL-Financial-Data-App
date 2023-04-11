@@ -7,8 +7,13 @@ import numpy as np
 st.title(body = "Blue Chip")
 st.caption(body = date.today())
 st.markdown(body = "* Horizontal Axis - MC (Million)")
-st.markdown(body = "* Vertical Axis - Ticker")
 st.markdown(body = "* Text - FV (%)")
+st.markdown(body = "* Vertical Axis - Ticker")
+
+with st.expander("How to interpret the chart?"):
+    st.markdown("""
+    This chart helps investors and traders identify stocks with a cheap valuation and a high liquidity.
+    """)
 
 if "col" in st.session_state:
     
