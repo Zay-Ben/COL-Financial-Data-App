@@ -26,7 +26,7 @@ if path_col:
     with pd.ExcelWriter(path = buffer, engine = "xlsxwriter") as writer:
         col.to_excel(writer)
         
-    writer.save()
+    writer.close()
         
     st.markdown(body = "Download Data")
     
