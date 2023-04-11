@@ -6,9 +6,9 @@ import numpy as np
 
 st.title(body = "Fundamental and Technical")
 st.caption(body = date.today())
-st.markdown(body = "* Bubble Size - MC (Million)")
 st.markdown(body = "* Horizontal Axis - P/FV")
 st.markdown(body = "* Vertical Axis - P/52H")
+st.markdown(body = "* Bubble Size - MC (Million)")
 
 with st.expander("How to interpret the chart?"):
     st.markdown("""
