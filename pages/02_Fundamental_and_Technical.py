@@ -10,6 +10,13 @@ st.markdown(body = "* Bubble Size - MC (Million)")
 st.markdown(body = "* Horizontal Axis - P/FV")
 st.markdown(body = "* Vertical Axis - P/52H")
 
+with st.expander("How to interpret the chart?"):
+    st.write(\"\"\"
+    The chart above shows some numbers I picked for you.
+    I rolled actual dice for these, so they're *guaranteed* to
+    be random.
+    \"\"\")
+
 if "col" in st.session_state:
     
     # Import Data
