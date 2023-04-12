@@ -12,7 +12,7 @@ st.markdown(body = "* Vertical Axis - Ticker")
 
 with st.expander("How to interpret the chart?"):
     st.markdown("""
-    This chart helps investors and traders identify stocks with a cheap valuation and a high liquidity.
+    This chart helps investors and traders identify stocks with cheap valuation and high liquidity.
     """)
 
 if "col" in st.session_state:
