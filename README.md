@@ -14,7 +14,7 @@ Please note that the app is not affiliated with COL Financial and has some limit
 
 ## Usage
 
-click here to watch [the COL Financial App Demonstration video](https://www.youtube.com/watch?v=dpicjW7MqEo).
+Click here to watch [the COL Financial App Demonstration video](https://www.youtube.com/watch?v=dpicjW7MqEo).
 
 To use the app, follow these simple steps:
 1. Create an xlsx file.
