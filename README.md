@@ -14,6 +14,8 @@ Please note that the app is not affiliated with COL Financial and has some limit
 
 ## Usage
 
+click here to watch [the COL Financial App Demonstration video](https://www.youtube.com/watch?v=dpicjW7MqEo).
+
 To use the app, follow these simple steps:
 1. Create an xlsx file.
 2. In the file, create three sheets namely ASI, IG, and TG for All Shares Index, Investment Guide, and Technical Guide, respectively.
