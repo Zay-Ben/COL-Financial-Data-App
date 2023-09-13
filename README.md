@@ -12,6 +12,8 @@ This app addresses these challenges by:
 
 Please note that the app is not affiliated with COL Financial and has some limitations, such as the lack of historical and fundamental data for some stocks, as well as some data being estimated by analysts. Nonetheless, the app still provides valuable insights for investors and traders in the Philippine stock market.
 
+![image](https://github.com/Zay-Ben/COL-Financial-Data-App/assets/101090718/617739b0-f223-48e6-bffe-b931fb32f4f7)
+
 ## Usage
 
 Click here to watch [the COL Financial App Demonstration video](https://www.youtube.com/watch?v=dpicjW7MqEo).
