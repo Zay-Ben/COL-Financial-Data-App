@@ -7,8 +7,9 @@ COL Financial, one of the largest stockbrokers in the Philippines, provides fund
 This app addresses these challenges by:
 1. Aggregating fundamental and technical data from multiple sources into a single source of truth.
 2. Updating the data using the most recent information, addressing timing discrepancies.
-3. Creating new variables from old variables, providing additional insights.
-4. Visualizing data to identify potential investments and trades, facilitating informed and timely decision-making
+   For example, the All Shares Index updates data in real-time, the Investment Guide updates data weekly, and the Technical Guide updates data daily. The decision to buy and sell a stock should happen in real-time to maximize opportunities and minimize risks.
+4. Creating new variables from old variables, providing additional insights.
+5. Visualizing data to identify potential investments and trades, facilitating informed and timely decision-making
 
 Please note that the app is not affiliated with COL Financial and has some limitations, such as the lack of historical and fundamental data for some stocks, as well as some data being estimated by analysts. Nonetheless, the app still provides valuable insights for investors and traders in the Philippine stock market.
 
