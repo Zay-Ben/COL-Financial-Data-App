@@ -7,7 +7,7 @@ COL Financial, one of the largest stockbrokers in the Philippines, provides fund
 This app addresses these challenges by:
 1. Aggregating fundamental and technical data from multiple sources into a single source of truth.
 2. Updating the data using the most recent information, addressing timing discrepancies.
-   For example, the All Shares Index updates data in real-time, the Investment Guide updates data weekly, and the Technical Guide updates data daily. The decision to buy and sell a stock should happen in real-time to maximize opportunities and minimize risks.
+- For example, the All Shares Index updates data in real-time, the Investment Guide updates data weekly, and the Technical Guide updates data daily. The decision to buy and sell a stock should happen in real-time to maximize opportunities and minimize risks.
 4. Creating new variables from old variables, providing additional insights.
 5. Visualizing data to identify potential investments and trades, facilitating informed and timely decision-making
 
